@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Education Portal Frontend",
+        "description": "It's a Student information system. It's used to manage students, teachers, lectures, schedules, etc.",
+        "techStack": "Angular, TypeScript, RxJS, Angular Material, Docker",
+        "githubUrl": "https://github.com/mharikmert/education-portal",
+        "deploymentUrl": "https://portal-demo.mharikmert.dev"
+    },
+    {
+        "name": "Education Portal Backend",
+        "description": "Backend application of Education Portal.",
+        "techStack": "Java, Spring Boot, Spring Security, Gradle, MySQL, Docker",
+        "githubUrl": "https://github.com/mharikmert/education-portal",
+        "deploymentUrl": "https://portal-backend.mharikmert.dev"
+    },
+    {
+        "name": "Personal Blog",
+        "description": "My personal blog. It's built with jekyll.",
+        "techStack": "Jekyll",
+        "githubUrl": "https://github.com/mharikmert/blog",
+        "deploymentUrl": "https://blog.mharikmert.dev"
+    },
+    {
+        "name": "Personal Website",
+        "description": "My personal portfolio website. It's built with jekyll.",
+        "techStack": "Jekyll",
+        "githubUrl": "https://github.com/mharikmert/mharikmert.dev",
+        "deploymentUrl": "https://mharikmert.dev"
+    },
+    {
+        "name": "mharikmert.dev-infra",
+        "description": "Continuous Delivery Pipeline for mharikmert.dev",
+        "techStack": "Kubernetes, FluxCD",
+        "githubUrl": "https://github.com/mharikmert/mharikmert.dev-infra",
+        "deploymentUrl": ""
+    },
+    {
+        "name": "Kubernetes Dashboard",
+        "description": "Monitoring dashboard for my projects deployed on Kubernetes.",
+        "techStack": "Kubernetes",
+        "githubUrl": "",
+        "deploymentUrl": "https://k8s-dashboard.mharikmert.dev"
+    }
+]

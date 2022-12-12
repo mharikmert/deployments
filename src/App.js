@@ -1,74 +1,91 @@
 import React from 'react';
 import { Table, TableBody, TableCell, TableHead, TableRow, Paper, Typography } from '@mui/material';
+import { CheckCircleOutlineOutlined, CancelOutlined } from '@mui/icons-material';
 import githubIcon from './assets/github.svg';
+import projects from './projects.json'
 
 const styles = {
   root: {
-    width: '50%',
-    marginTop: 3,
-    overflowX: 'auto',
-    margin: '5% auto',
-  },
-  table: {
-    minWidth: 650,
+    width: '80%',
+    margin: 'auto',
+    minWidth: 750,
   },
   tableCell: {
     textAlign: 'center',
   },
   header: {
     textAlign: 'center',
-    margin: '5% auto',
+    margin: '2% auto',
     fontSize: '2rem',
   },
   tableRow: {
     '&:nth-of-type(odd)': {
       backgroundColor: 'rgba(0, 0, 0, 0.04)',
+    }
+  },
+  tableHead: {
+    fontWeight: 'bold',
+    textAlign: 'center',
+    width: '20%',
+  },
+  link: {
+    textDecoration: 'none',
+    color: 'inherit',
+  },
+  status: {
+    up: {
+      color: 'green',
     },
-  }
-
+    down: {
+      color: 'red',
+    }
+  },
 }
 
-function createData(name, description, deploymentDate, githubUrl, deploymentUrl, status) {
-  return { name, description, deploymentDate, githubUrl, deploymentUrl, status };
-}
-
-const rows = [
-  createData('Project 1', 'A description of project 1', 'January 1, 2020', 'https://github.com/user/project1', 'https://project1.com', 'Deployed'),
-  createData('Project 2', 'A description of project 2', 'February 15, 2020', 'https://github.com/user/project2', 'https://project2.com', 'In Development'),
-  createData('Project 3', 'A description of project 3', 'March 1, 2020', 'https://github.com/user/project3', 'https://project3.com', 'Cancelled'),
-];
+const rowHeaders = ['Name', 'Description', 'Tech Stack', 'Github', 'Url', 'Status'];
 
 function App() {
+  const projectsWithStatus = projects.map(project => {
+    return { ...project, status: <CheckCircleOutlineOutlined sx={styles.status.up} /> }
+  })
+
   return (
     <>
       <Typography sx={styles.header}>
-        Projects
+        Deployments
       </Typography>
 
 
       <Paper sx={styles.root}>
-        <Table sx={styles.table}>
+        <Table>
           <TableHead>
             <TableRow sx={styles.tableRow}>
-              <TableCell>Name</TableCell>
-              <TableCell>Description</TableCell>
-              <TableCell>Deployment Date</TableCell>
-              <TableCell>GitHub Url</TableCell>
-              <TableCell>Deployment Url</TableCell>
-              <TableCell>Status</TableCell>
+
+              {rowHeaders.map(header => (
+                <TableCell sx={styles.tableHead}>
+                  {header}
+                </TableCell>
+              ))}
+
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map(row => (
-              <TableRow key={row.name} sx={styles.tableCell}>
-                <TableCell>{row.name}</TableCell>
-                <TableCell>{row.description}</TableCell>
-                <TableCell>{row.deploymentDate}</TableCell>
-                <TableCell sx={styles.tableCell}>
-                  <img src={githubIcon} alt='github icon' href="https://portal-demo.mharikmert.dev" />
-                </TableCell>
-                <TableCell>{row.deploymentUrl}</TableCell>
-                <TableCell>{row.status}</TableCell>
+            {projectsWithStatus.map(row => (
+              <TableRow key={row.name}>
+                {
+                  Object.keys(row).map(value => (
+                    <TableCell sx={styles.tableCell}>
+                      {
+                        value === 'githubUrl' ? <a href={row[value]}><img src={githubIcon} alt="github icon" /></a>
+                          :
+                          value === 'deploymentUrl' ? <a href={row[value]} sx={styles.link}> {row[value]}</a>
+                            :
+                            row[value]
+                      }
+
+                    </TableCell>
+                  ))
+                }
               </TableRow>
             ))}
           </TableBody>
