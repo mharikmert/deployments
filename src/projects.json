@@ -1,5 +1,12 @@
 [
     {
+        "name": "Personal Website",
+        "description": "My personal portfolio website. It's built with jekyll.",
+        "techStack": "Jekyll",
+        "githubUrl": "https://github.com/mharikmert/mharikmert.dev",
+        "deploymentUrl": "https://mharikmert.dev"
+    },
+    {
         "name": "Education Portal Frontend",
         "description": "It's a Student information system. It's used to manage students, teachers, lectures, schedules, etc.",
         "techStack": "Angular, TypeScript, RxJS, Angular Material, Docker",
@@ -21,18 +28,11 @@
         "deploymentUrl": "https://blog.mharikmert.dev"
     },
     {
-        "name": "Personal Website",
-        "description": "My personal portfolio website. It's built with jekyll.",
-        "techStack": "Jekyll",
-        "githubUrl": "https://github.com/mharikmert/mharikmert.dev",
-        "deploymentUrl": "https://mharikmert.dev"
-    },
-    {
-        "name": "mharikmert.dev-infra",
-        "description": "Continuous Delivery Pipeline for mharikmert.dev",
-        "techStack": "Kubernetes, FluxCD",
-        "githubUrl": "https://github.com/mharikmert/mharikmert.dev-infra",
-        "deploymentUrl": ""
+        "name": "Deployments Dashboard",
+        "description": "Dashboard for my projects and related links.",
+        "techStack": "React, MUI, JavaScript",
+        "githubUrl": "https://github.com/mharikmert/deployments",
+        "deploymentUrl": "https://deployments.mharikmert.dev"
     },
     {
         "name": "Kubernetes Dashboard",
@@ -40,5 +40,19 @@
         "techStack": "Kubernetes",
         "githubUrl": "",
         "deploymentUrl": "https://k8s-dashboard.mharikmert.dev"
+    },
+    {
+        "name": "Infrastructure Architecture",
+        "description": "A simple web page that serves the architecture diagram of the mharikmert.dev's infrastructure.",
+        "techStack": "HTML, CSS, httpd, Docker",
+        "githubUrl": "https://github.com/mharikmert/infra-svg-server",
+        "deploymentUrl": "https://infra.mharikmert.dev"
+    },
+    {
+        "name": "mharikmert.dev-infra",
+        "description": "Continuous Delivery Workflow for mharikmert.dev",
+        "techStack": "Kubernetes, FluxCD, GitOps",
+        "githubUrl": "https://github.com/mharikmert/mharikmert.dev-infra",
+        "deploymentUrl": ""
     }
 ]
