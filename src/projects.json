@@ -35,11 +35,11 @@
         "deploymentUrl": "https://deployments.mharikmert.dev"
     },
     {
-        "name": "Kubernetes Dashboard",
+        "name": "Grafana Dashboard",
         "description": "Monitoring dashboard for my projects deployed on Kubernetes.",
-        "techStack": "Kubernetes",
+        "techStack": "Grafana, Prometheus",
         "githubUrl": "",
-        "deploymentUrl": "https://k8s-dashboard.mharikmert.dev"
+        "deploymentUrl": "https://grafana-dashboard.mharikmert.dev"
     },
     {
         "name": "Infrastructure Architecture",
