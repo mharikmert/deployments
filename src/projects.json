@@ -38,7 +38,7 @@
         "name": "Grafana Dashboard",
         "description": "Monitoring dashboard for my projects deployed on Kubernetes.",
         "techStack": "Grafana, Prometheus",
-        "githubUrl": "",
+        "githubUrl": "https://github.com/mharikmert/mharikmert.dev-infra/tree/master/clusters/mharikmert.dev/monitoring",
         "deploymentUrl": "https://grafana-dashboard.mharikmert.dev"
     },
     {
