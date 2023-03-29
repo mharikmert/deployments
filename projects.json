@@ -4,55 +4,63 @@
         "description": "My personal portfolio website. It's built with jekyll.",
         "techStack": "Jekyll",
         "githubUrl": "https://github.com/mharikmert/mharikmert.dev",
-        "deploymentUrl": "https://mharikmert.dev"
+        "deploymentUrl": "https://mharikmert.dev",
+        "status": "ok"
     },
     {
         "name": "Education Portal Frontend",
         "description": "It's a Student information system. It's used to manage students, teachers, lectures, schedules, etc.",
         "techStack": "Angular, TypeScript, RxJS, Angular Material, Docker",
         "githubUrl": "https://github.com/mharikmert/education-portal",
-        "deploymentUrl": "https://portal-demo.mharikmert.dev"
+        "deploymentUrl": "https://portal-demo.mharikmert.dev",
+        "status": "ok"
     },
     {
         "name": "Education Portal Backend",
         "description": "Backend application of Education Portal.",
         "techStack": "Java, Spring Boot, Spring Security, Gradle, MySQL, Docker",
         "githubUrl": "https://github.com/mharikmert/education-portal",
-        "deploymentUrl": "https://portal-backend.mharikmert.dev"
+        "deploymentUrl": "https://portal-backend.mharikmert.dev",
+        "status": "ok"
     },
     {
         "name": "Personal Blog",
         "description": "My personal blog. It's built with jekyll.",
         "techStack": "Jekyll",
         "githubUrl": "https://github.com/mharikmert/blog",
-        "deploymentUrl": "https://blog.mharikmert.dev"
+        "deploymentUrl": "https://blog.mharikmert.dev",
+        "status": "ok"
     },
     {
         "name": "Deployments Dashboard",
         "description": "Dashboard for my projects and related links.",
-        "techStack": "React, MUI, JavaScript",
+        "techStack": "HTML, CSS, JavaScript, httpd, Docker",
         "githubUrl": "https://github.com/mharikmert/deployments",
-        "deploymentUrl": "https://deployments.mharikmert.dev"
+        "deploymentUrl": "https://deployments.mharikmert.dev",
+        "status": "ok"
     },
     {
         "name": "Grafana Dashboard",
         "description": "Monitoring dashboard for my projects deployed on Kubernetes.",
         "techStack": "Grafana, Prometheus",
         "githubUrl": "https://github.com/mharikmert/mharikmert.dev-infra/tree/master/clusters/mharikmert.dev/monitoring",
-        "deploymentUrl": "https://grafana-dashboard.mharikmert.dev"
+        "deploymentUrl": "https://grafana-dashboard.mharikmert.dev",
+        "status": "ok"
     },
     {
         "name": "Infrastructure Architecture",
         "description": "A simple web page that serves the architecture diagram of the mharikmert.dev's infrastructure.",
         "techStack": "HTML, CSS, httpd, Docker",
         "githubUrl": "https://github.com/mharikmert/infra-svg-server",
-        "deploymentUrl": "https://infra.mharikmert.dev"
+        "deploymentUrl": "https://infra.mharikmert.dev",
+        "status": "ok"
     },
     {
         "name": "mharikmert.dev-infra",
         "description": "Continuous Delivery Workflow for mharikmert.dev",
         "techStack": "Kubernetes, FluxCD, GitOps",
         "githubUrl": "https://github.com/mharikmert/mharikmert.dev-infra",
-        "deploymentUrl": ""
+        "deploymentUrl": "",
+        "status": ""
     }
 ]

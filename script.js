@@ -1,14 +1,3 @@
-// // Read data from JSON file
-// const xhr = new XMLHttpRequest();
-// xhr.open('GET', 'projects.json', true);
-// xhr.onload = function () {
-//   if (this.status === 200) {
-//     const data = JSON.parse(this.responseText);
-//     createTable(data);
-//   }
-// }
-// xhr.send();
-
 const data = fetch('projects.json')
 
 data.then(response => {
@@ -34,27 +23,51 @@ const createTable = (data) => {
 
   // Create table body rows
   const tbody = table.createTBody();
+
   data.forEach(project => {
     const row = tbody.insertRow();
+
     Object.values(project).forEach((value, index) => {
       const cell = row.insertCell(index);
       if (index === 3) {
+
         // Create Github link
         const link = document.createElement('a');
         link.href = value;
+
         const img = document.createElement('img');
-        img.src = './github.svg';
+        img.src = './assets/github.svg';
         img.alt = 'Github icon';
         link.appendChild(img);
         cell.appendChild(link);
-      } else if (index === 4) {
+
+      }
+      else if (index === 4) {
         // Create URL link
         const link = document.createElement('a');
         link.href = value;
         link.textContent = value;
         link.classList.add('link');
         cell.appendChild(link);
-      } else {
+      }
+
+      // status 
+      else if (index === 5) {
+        // create status img using ./ok.svg or ./error.svg
+        const img = document.createElement('img');
+        img.src = value === 'ok' ? './assets/ok.svg' : './assets/error.svg';
+        img.style.width = '20px';
+        img.style.height = '20px';
+        img.style.borderRadius = '50%';
+        img.style.backgroundColor = 'lightgreen';
+
+        if (value === '')
+          img.style.display = 'none';
+
+        cell.appendChild(img);
+      }
+
+      else {
         // Insert text
         const text = document.createTextNode(value);
         cell.appendChild(text);

@@ -1,24 +1,52 @@
 /* Style for the table */
 table {
   border-collapse: collapse;
-  width: 80%;
   margin: auto;
-  min-width: 750px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+  border: 2px solid rgba(0, 0, 0, 0.04);
 }
 
 th,
 td {
   text-align: center;
   padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
 th {
   font-weight: bold;
   width: 20%;
+  height: 35px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+td {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  display: table-cell;
+  vertical-align: inherit;
+  border-bottom: 1px solid rgb(224, 224, 224);
+  padding: 16px;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
+  text-align: center;
+  border: none
 }
 
 tr:nth-child(even) {
   background-color: rgba(0, 0, 0, 0.04);
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+tr {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.04);
 }
 
 /* Style for the page */
@@ -29,15 +57,19 @@ body {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 80%;
   margin: auto;
   padding: 20px;
 }
 
 h1 {
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
   text-align: center;
-  font-size: 2rem;
   margin: 2% auto;
+  font-size: 2rem;
 }
 
 html {
