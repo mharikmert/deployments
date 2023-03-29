@@ -1,0 +1,45 @@
+/* Style for the table */
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  min-width: 750px;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  font-weight: bold;
+  width: 20%;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+/* Style for the page */
+body {
+  font-family: Arial, sans-serif;
+  /* background-color: #f2f2f2; */
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2% auto;
+}
+
+html {
+  background-color: aliceblue;
+}
